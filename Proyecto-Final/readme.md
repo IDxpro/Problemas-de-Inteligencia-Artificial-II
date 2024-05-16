@@ -1,6 +1,6 @@
 # Readme.md
 
-Este código en Python implementa un modelo de clasificación utilizando el algoritmo K-Vecinos Cercanos (K-Nearest Neighbors, KNN) para un conjunto de datos de características de animales. A continuación, se explica el código por partes de una manera fácil de entender:
+Este código en Python implementa un modelo de clasificación utilizando cualquiera de los siguientes algoritmos: Regresión logística (Logistic Regression), K-Vecinos Cercanos (K-Nearest Neighbors), Maquinas Vector Soporte (Support Vector Machines) o Naive Bayes para un conjunto de datos de características de animales. A continuación, se explica el código por partes de una manera fácil de entender:
 
 ## Importación de librerías
 
@@ -58,7 +58,7 @@ Luego, se carga el conjunto de datos desde el archivo CSV utilizando `pd.read_cs
 
 El conjunto de datos se divide en conjuntos de entrenamiento y prueba utilizando `train_test_split` de `sklearn`. El parámetro `test_size=0.2` indica que el 20% de los datos se utilizarán para pruebas, y el `random_state=42` garantiza que la división sea reproducible.
 
-Luego, se realiza un escalamiento o normalización de las características utilizando `StandardScaler` de `sklearn`. Esto ayuda a que el algoritmo KNN funcione mejor, ya que las características se escalan a una misma escala.
+Luego, se realiza un escalamiento o normalización de las características utilizando `StandardScaler` de `sklearn`. 
 
 ```python
     # Crear y entrenar el modelo K-Vecinos Cercanos
@@ -66,7 +66,7 @@ Luego, se realiza un escalamiento o normalización de las características utili
     model.fit(X_train, y_train)
 ```
 
-Se crea una instancia del clasificador KNN de `sklearn` con `n_neighbors=7`, lo que significa que se utilizarán los 7 vecinos más cercanos para hacer las predicciones. Luego, se entrena el modelo utilizando los datos de entrenamiento (`X_train` y `y_train`).
+En el caso especifico de KNN, se crea una instancia del clasificador KNN de `sklearn` con `n_neighbors=7`, lo que significa que se utilizarán los 7 vecinos más cercanos para hacer las predicciones. Luego, se entrena el modelo utilizando los datos de entrenamiento (`X_train` y `y_train`).
 
 ```python
     # Hacer predicciones y evaluar el modelo
