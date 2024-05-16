@@ -1,6 +1,3 @@
-
-Claro, aquí tienes una versión adaptada para un README en GitHub:
-
 Modelo de Clasificación K-Vecinos Más Cercanos (KNN)
 Este es un script en Python que muestra cómo construir, entrenar, evaluar y guardar un modelo de clasificación KNN utilizando la librería Scikit-Learn. También incluye funcionalidad para cargar un conjunto de datos desde un archivo CSV usando un cuadro de diálogo basado en Tkinter y preprocesar los datos antes de entrenar el modelo.
 
